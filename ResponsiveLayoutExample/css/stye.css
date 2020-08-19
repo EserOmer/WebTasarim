@@ -1,0 +1,153 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+
+}
+*{
+    box-sizing: border-box;
+
+
+}
+.navbar{
+    text-align: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar li:hover{
+    background-color:bisque;
+    color: black;
+}
+.navbar ul{
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.navbar li{
+    display: table-cell;
+    float: none;
+    padding: 10px;
+    margin: 5px;
+    transition:background 1s;
+    background-color: darkgray;
+}
+.header{
+    height: 100px; 
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 150px;
+}
+
+.header img {
+   width: 100%;
+    height: 150px;
+}
+.pc{
+    z-index: 1;
+}
+.header div{
+    position: absolute;
+    width: 100%;
+}
+.header h4{
+    position: absolute;
+    color: orangered;
+    width: 100%;
+    z-index: 2;
+}
+
+.section{
+    width: 100%;
+    float:left;
+}
+.icerik{
+    width: 25%;
+    float: left;
+    padding: 25px;
+}
+.icerik img{
+    width: 100%;
+    opacity: 0.5;
+}
+.icerik img:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.fm{
+    float: left;
+    padding: 0px;
+    width: 100%;
+    background-color: gainsboro;
+}
+.fm a{
+    text-decoration: none;
+}
+.fm ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+.fm li{
+    float: none; 
+    padding: 05px;
+    display: inline-block;
+}
+.footer{
+    float: right;
+    width: 100%;
+    height: 50px;
+    background-color:darkgrey;
+}
+.footer h4{
+    margin: 15px 0px;
+    text-align: center;
+}
+@media screen and (max-width:700px){
+    .icerik{
+        width: 100%;
+        float: none;
+        float: left;
+    }
+    .icerik img{
+        width: 50%;
+        float: left;
+        padding: 15px;
+    }
+    .tablet {
+        z-index: 1;
+    }
+}
+@media screen and (max-width:500px){
+    .navbar li{
+        display: block;
+    }
+    .header {
+    }
+    .section{
+        width: 100%;
+    }
+    .icerik{
+        width: 100%;
+        float: none;
+        padding: 20px;
+    }
+    .icerik img{
+        width: 50%;
+        float: left;
+    }
+    .tel{
+        z-index: 1;
+    }
+}
