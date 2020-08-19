@@ -1,0 +1,464 @@
+<!doctype html>
+<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-inner img{
+                width: 100%;
+                
+            }
+            .modal-body img{
+                width: 100%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+        <div class="carousel slide" id="carousel" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/yg1.jpg" height="300px" alt="Yedi Göller">
+                    <div class="carousel-caption"><h3>Yedi Göller</h3></div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/3.jpg" height="300px"  alt="Düzce Üni">
+                    <div class="carousel-caption"><h3>Düzce Üni</h3></div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/1.JPG" height="300px" alt="Beyşehir">
+                    <div class="carousel-caption"><h3>Beyşehir</h3></div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/2.jpg" height="300px" alt="Konya">
+                    <div class="carousel-caption"><h3>Konya</h3></div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-light ">
+            <a class="navbar-brand text-light" href="#" >Logo</a>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navc" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navc">
+                <ul class="navbar-nav mr-auto" id="navc">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Link1</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Link2</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Link3</a></li>
+                    <li class="nav-item dropdown" href="#navbardrop">
+                        <a class="nav-link text-light dropdown-toggle " data-toggle="dropdown" href="#navbardrop" >Link4</a>
+                        <div class="dropdown-menu bg-secondary" id="navbardrop">
+                            <a class="dropdown-item text-light" href="#">Link 1</a>
+                            <a class="dropdown-item text-light" href="#">Link 2</a>
+                            <a class="dropdown-item text-light" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Link5</a></li>
+                </ul>
+                <form class="form-inline " action="/action_page.php">
+                <input class="form-control mr-sm-2 bg-light" type="text" placeholder="Arama" >
+                    <button class="btn btn-warning" type="submit">Ara</button>
+            </form>
+            </div>
+        </nav>
+            <div id="accordion">
+                <div class="card bg-dark">
+                    <div class="header">
+                        <a href="#c1" class="card-link collapsed text-light " data-toggle="collapse">Konya</a>
+                    </div>
+                    <div class="collapse show" id="c1" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/k1.jpg" alt="Card image"> 
+                                        <div class="card-body">
+                                            <h5 class="card-title">Konya-Selçuklu</h5>
+                                            <p class="card-text">Konya Stadyumu</p>
+                                            
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m1" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m1">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Konya Stadyumu</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/k1.jpg" alt="Modal image">
+                                                <p class="modal-text">Stadyumumuz 400.000,00 m² lik arazi üzerine toplam 90.000,00m² lik inşaat alanına UEFA-FIFA Kriterlerine uygun olarak yapılmıştır.
+                    Stadyumumuzun kriterleri üst düzey futbol müsabakalarına ev sahipliği yapabilecek konumda Dünya’daki yerini alacaktır.
+                  Konya Büyükşehir Stadyumu 42.000 kişi kapasitesinin yanısıra bünyesinde üç adet mağaza (mağaza 1; 1.000 m² doğu tribünü, store mağazası 1; – 1.700 m² kuzey tribünü – store mağazası 2; 900 m²), UEFA Club Ağırlama alanı 1.822 m², çok amaçlı salon 200 m², misafir seyirci fuayesi 2.695 m², üç adet restoran (restoran 1 ; 875 m² güney doğu tribünü - restoran 2; 760 m² kuzey batı tribünü, restoran 3; 875 m² kuzey doğu tribünü) barındırmaktadır.
+                    Stadyumumuzda toplam 55 adet loca bulunmaktadır. Bunların 27si doğu tribünlerinde, 28 tanesi ise batı tribünlerinde yer almaktadır.
+                    6222 sayılı Sporda Şiddetin ve Düzensizliğin Önlenmesine Dair Kanun’da yer alan elektronik bilet ve kameralı güvenlik sistemi mevcuttur. 150 Adet yüz tanıma kamerası ve 128 adet güvenlik kameraları bulunmaktadır.
+                    75m*115m çim saha alanının yanı sıra tartan pist mevcuttur. 68 m * 105 m futbol oyun alanı dışında kalan çim saha alanında futbolcuların ısınmaları için tasarlanmıştır.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/k2.jpg" alt="Card image"> 
+                                        <div class="card-body">
+                                            <h5 class="card-title">Konya-Eğribayat</h5>
+                                            <p class="card-text">Konya Eğribayat</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m2" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m2">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Konya Eğribayat Köyü</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/k2.jpg" alt="Modal image">
+                                                <p class="modal-text">Eğribayat Köyü Konya ilinde yer almakta olup, Selçuklu Köyleri semtinde bulunan Eğribayat Köyü Selçuklu ilçesine bağlıdır.Eğribayat Köyü haritası konumu ise 38° 7' 20.9100'' Kuzey ve 32° 45' 58.3380'' Doğu gps koordinatlarıdır. Eğribayat Köyü bağlı olduğu Selçuklu ilçe merkezine 36 kilometre mesafe uzaklıktadır. Eğribayat Köyü Konya şehir merkezine mesafesi ise yaklaşık 36 kilometredir.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/k3.jpg" alt="Card image"> 
+                                        <div class="card-body">
+                                            <h5 class="card-title">Konya-Beyşehir</h5>
+                                            <p class="card-text">Konya Beyşehir Gölü</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m2" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m3">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Konya Beyşehir Gölü</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/k3.jpg" alt="Modal image">
+                                                <p class="modal-text">Göl çevresi 20.02.1993 tarihi itibariyle Milli Park Statüsü'ne alınmış olup, milli park alanı 88.750 hektardır. Antalya Körfezine 100 - 140 km mesafededir. Göl sularını 115 ile 1125 kodları arasında depolar. Azami kodlarda göl sathı 800 km2 'ye ve depoladığı su 6 milyon m3'e ulaşır. Gölün denizden yüksekliği 1.116 m'dir. Eni 10-25 km, kuzeybatı ve güneydoğu doğrultusunda 42 km boyutlarındadır. Suyu tatlı olup tabii göl vasfı taşır. Yeraltından Manavgat Çayı ile Akdeniz'e ulaşır. Toroslardan akan yağmur suları ve akarsulardan ziyade gelirinin büyük çoğunluğunu yer altı kaynakları oluşturmaktadır. Beyşehir gölü kapladığı alan bakımından Türkiye'nin 3. ayrıca en büyük tatlı su gölüdür. Su seviyesine göre (1.121 - 1.125 m) 615 ila 745 km2 'lik bir alanı kaplar. Oluşumu bakımından tektonik meşeyli, karstik bir göldür. </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/k4.JPG" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Konya-Güvenç</h5>
+                                            <p class="card-text">Konya Güvenç Köyü</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m2" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m4">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Konya Güvenç Köyü</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/k4.JPG" alt="Modal image">
+                                                <p class="modal-text">Güvenç Köyü Konya ilinde yer almakta olup, Selçuklu Köyleri semtinde bulunan Güvenç Köyü Selçuklu ilçesine bağlıdır.Güvenç Köyü haritası konumu ise 38° 9' 48.0168'' Kuzey ve 32° 39' 15.8688'' Doğu gps koordinatlarıdır. Güvenç Köyü bağlı olduğu Selçuklu ilçe merkezine 35 kilometre mesafe uzaklıktadır. Güvenç Köyü Konya şehir merkezine mesafesi ise yaklaşık 35 kilometredir. </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark">
+                    <div class="header">
+                        <a href="#c2" class="card-link collapsed text-light" data-toggle="collapse">Düzce</a>
+                    </div>
+                    <div class="collapse"id="c2" data-parent=#accordion>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/d1.jpg" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Düzce-Kampüsü</h5>
+                                            <p class="card-text">Kampüsten Bir Görntü</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m5" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m5">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Kampüs</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/d1.jpg" alt="Modal image">
+                                                <p class="modal-text">Bir yaz akşamı amatör olarak çektiğim fotoğraftır. Sabah ve ya akşam fark etmez, Düzce Üniversitesinde böyle güzel manzaralara her an rastlayabilirsiniz.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/3.jpg" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Rektörlük</h5>
+                                            <p class="card-text">Düzce Üniversitesi </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m6" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m6">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Düzce Üniversitesi Rektörlüğü</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/3.jpg" alt="Modal image">
+                                                <p class="modal-text">Vize haftası kütüphane penceresinden baktığımda karşılaştığım manzara. Yoğun çalışmaların arasında böyle bir manzaraya karşı mola vermeniz gerekebiliyor.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/d3.jpg" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Cahit Zarifoğlu</h5>
+                                            <p class="card-text">Düzcede bir yurt</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m7" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m7">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Yurdun Arka Penceresinden Bir Görntü</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/d3.jpg" alt="Modal image">
+                                                <p class="modal-text">Yine mola verdiğimde karşılaştığım manzaradır. Günbatımı renkleri insana huzur veriyor gerçekten.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/d4.JPG" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Düzce</h5>
+                                            <p class="card-text">Düzcede Sıradan Bir Gün</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m8" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m8">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Düzcedeki Bulutlar</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/d4.JPG" alt="Modal image">
+                                                <p class="modal-text">Düzcede yaşıyorsanız böyle bulutlu havalara alışmalısınız.Fotoğraf çekmeyi seven birisi olarak bu tarz bulutlu havalar benim güzel pozlar yakalamama fırsat veriyor.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark">
+                    <div class="header">
+                        <a href="#c3" class="card-link collapsed text-light" data-toggle="collapse">Anamur</a>
+                    </div>
+                    <div class="collapse"id="c3" data-parent=#accordion>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/a1.jpg" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Anamur</h5>
+                                            <p class="card-text">Yapmış Olduğum Gezilerden Bir Fotoğraf</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m9" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m9">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Anamur</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/a1.jpg" alt="Modal image">
+                                                <p class="modal-text">Derme çatma barakaların önünden akan bu nehir doğruca denize dökülüyor. Emekliyseniz ya da sessizliği seviyorsanız Anamur tam size göre.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/a2.jpg" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Sahil</h5>
+                                            <p class="card-text">Gece Sahillerdeki Görünmeyen Güzellik</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m10" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade " id="m10">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Anamur Sahili</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/a2.jpg" alt="Modal image">
+                                                <p class="modal-text">Telefonumla çektiğim bu fotoğraf ise Anamurdan. Uzun pozlama sayesinde güneş yüzünü göstermezken güzel görüntüler yakalyabilirsiniz.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/a3.jpg" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Anemurium Antik Kenti</h5>
+                                            <p class="card-text">Anamur'da Bir Antik Kent</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m11" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m11">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Anemurium Antik Kenti</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/a3.jpg" alt="Modal image">
+                                                <p class="modal-text">Anemurium Antik Kenti 19'uncu yüzyılda İngiliz donanmasından Albay Francis Beaufor’un bu kıyılarda yaptığı keşif gezisiyle tanınmıştır. 1960’lı yıllarda Toronto Üniversitesi’nden Elisabeth Alföldi tarafından başlatılan yüzey araştırmaları daha sonra Kanada British Colombia Üniversitesi’nden Prof. James Russel başkanlığında kazı ve restorasyon çalışmaları şeklinde 1998 yılı sonuna kadar sürdürülmüştür. Yapılan kazılarda çıkan buluntular arasında balıkçı aletleri, inşaat, terzi, çömlekçi aletleri, sikkeler, kurşun mühür, kantar ağırlığı, dokuma aletleri, anahtar, kilit, oyun ve eğlence aletleri, usturalar, makyaj malzemeleri, kolye, küpe, bilezik, altın kemer tokaları sayılabilir.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="card bg-secondary text-light">
+                                        <img class="card-img" src="images/a4.JPG" alt="Card image"> <div class="card-body">
+                                            <h5 class="card-title">Anamur</h5>
+                                            <p class="card-text">Dönüş Yolunda Verilen Bir Mola</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a class="btn btn-dark btn-sm card-link" data-toggle="modal" data-target="#m12" href="#">Daha Fazla</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="m12">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title ">Karanın Bittiği Yer</p>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <img src="images/a4.JPG" alt="Modal image">
+                                                <p class="modal-text">Dağların denize kavuştuğu bu yer aslında köşekbükü mağarasının önünde bulunmaktadır. Uçsuz bucaksız deniz manzarası insanı büylüyor.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-secondary jumbotron text-center margin-bottom:0px;">
+                <p>COPYRİGHT</p>
+            </footer>
+    </div>
+
+    </body>
+</body>
