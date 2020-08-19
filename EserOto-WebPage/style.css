@@ -1,0 +1,111 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div .navbar{
+ padding-left: 0px;
+ padding-right: 0px;
+}
+.tkp{
+    font-weight:bold; 
+}
+.table-row{
+        cursor:pointer;
+    }
+.col-sm-4 .img-thumbnail{
+    border:none;
+    padding: 0px;
+}
+.detay .img-thumbnail{
+    border: none;
+    padding: 0px;
+}
+.kucukr{
+    width: 20%;
+    float: left;
+    padding: 2px;
+}
+
+.slideshow-container {
+    position:relative;
+    padding: 0px;
+}
+.dot-container {
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.act, .dot:hover {
+  background-color: #717171;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+    position: absolute;
+    right: 25%;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 25%;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+.fadee {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.text-font td{
+    font-size: x-small;
+}
+.text-font th{
+    font-size: small;
+}
+.detay-tablo{
+    height:570px;
+}
+.scrool{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.kaportascrol{
+    height: 650px;
+}
